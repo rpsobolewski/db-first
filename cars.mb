@@ -4,22 +4,22 @@
 -ID | PK, BIGINT , AUTO_INCREMENT, UNIQUE, NOT NULL
 -modello | VARCHAR(30), NOT NULL
 -km | INT, NULL
--neopatentati |
--alimentazione
--prezzo
--anno
--potenza
--cilindrata
--n cilindri
--cambio
--n marcie
--carrozzeria
--colore esterno
--materiale interno
--colore interno
--peso
--posti
--porte
--n proprietari
--consumi
--emissioni
+-neopatentati | TINYINT, DEFAULT(1)
+-alimentazione | VARCHAR(20) NOT NULL
+-prezzo | DECIMAL(10,2) NULL //99999999,99
+-anno | YEAR, NOT NULL
+-potenza | DECIMAL(5, 1), NULL //9999,9 
+-cilindrata | DECIMAL(2,1), NULL
+-n cilindri | TINYINT, NULL
+-cambio| VARCHAR(20), NULL
+-n marcie | TINYINT, NULL
+-carrozzeria | VARCHAR(20), NULL
+-colore esterno| VARCHAR(20), NULL
+-materiale interno| VARCHAR(20), NULL
+-colore interno| VARCHAR(20), NULL
+-peso| SMALLINT, NULL
+-posti| TINYINT, NULL
+-porte| TINYINT, NULL
+-n proprietari| TINYINT, NULL
+-consumi(L/100km)| TINYINT, NULL
+-emissioni(g/km)| SMALLINT, NULL
